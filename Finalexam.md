@@ -28,17 +28,17 @@ $$\frac{1}{s(s+4)} = \frac{1}{4}\left(\frac{1}{s} - \frac{1}{s+4}\right)$$
 
 對其進行拉普拉斯反轉換 $\mathcal{L}^{-1}$：
 
-$$\mathcal{L}^{-1}\left\{ \frac{1}{4}\left(\frac{1}{s} - \frac{1}{s+4}\right) \right\} = \frac{1}{4}\left(1 - e^{-4t}\right)u(t)$$
+$$\mathcal{L}^{-1}\left[ \frac{1}{4}\left(\frac{1}{s} - \frac{1}{s+4}\right) \right] = \frac{1}{4}\left(1 - e^{-4t}\right)u(t)$$
 
 *(其中 $u(t)$ 為單位階梯函數 Unit Step Function)*
 
 接下來處理含有平移因子 $e^{-3s}$ 的第二項。根據**時間平移定理 (Time-Shifting Theorem)**：
 
-$$\mathcal{L}^{-1}\left\{ e^{-as}G(s) \right\} = g(t-a)u(t-a)$$
+$$\mathcal{L}^{-1}[ e^{-as}G(s) ] = g(t-a)u(t-a)$$
 
 在此題中 $a = 3$，故：
 
-$$\mathcal{L}^{-1}\left\{ \frac{e^{-3s}}{s(s+4)} \right\} = \frac{1}{4}\left(1 - e^{-4(t-3)}\right)u(t-3)$$
+$$\mathcal{L}^{-1}\left[ \frac{e^{-3s}}{s(s+4)} \right] = \frac{1}{4}\left(1 - e^{-4(t-3)}\right)u(t-3)$$
 
 將兩部分合併，即得到最終解 $f(t)$：
 
